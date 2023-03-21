@@ -11,9 +11,6 @@ def login():
   password = request.args.get('password')
   if Username == "admin" and password == "xxx123##":
     return render_template("login.html", Username=Username)
-  else:
-    return render_template("errore.html", password=password)
-
 
 
 if __name__ == '__main__':

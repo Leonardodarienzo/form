@@ -9,10 +9,8 @@ def index():
 def login():
   Username = request.form['Username']
   password = request.form['password']
-  if Username == "admin" and password == "xxx123##":
+    Username == "admin" and password == "xxx123##":
     return render_template("login.html", Username=Username)
-  else:
-    return render_template("errore.html", password=password)
 
 
 
